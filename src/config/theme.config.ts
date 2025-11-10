@@ -1,0 +1,75 @@
+export const darkTheme = {
+  colors: {
+    primary: '#00D4AA',
+    secondary: '#6366F1',
+    background: '#0F1419',
+    surface: '#1A1F26',
+    card: '#22272E',
+    error: '#EF4444',
+    success: '#10B981',
+    warning: '#F59E0B',
+    text: '#F9FAFB',
+    textSecondary: '#9CA3AF',
+    border: '#374151',
+    disabled: '#4B5563',
+    buy: '#10B981',
+    sell: '#EF4444',
+    neutral: '#6B7280',
+  },
+  spacing: {
+    xs: 4,
+    sm: 8,
+    md: 16,
+    lg: 24,
+    xl: 32,
+    xxl: 48,
+  },
+  borderRadius: {
+    sm: 4,
+    md: 8,
+    lg: 12,
+    xl: 16,
+    full: 9999,
+  },
+  fontSize: {
+    xs: 12,
+    sm: 14,
+    md: 16,
+    lg: 18,
+    xl: 24,
+    xxl: 32,
+  },
+  fontWeight: {
+    regular: '400' as const,
+    medium: '500' as const,
+    semibold: '600' as const,
+    bold: '700' as const,
+  },
+};
+
+export const lightTheme = {
+  colors: {
+    primary: '#00A88E',
+    secondary: '#4F46E5',
+    background: '#FFFFFF',
+    surface: '#F3F4F6',
+    card: '#FFFFFF',
+    error: '#DC2626',
+    success: '#059669',
+    warning: '#D97706',
+    text: '#111827',
+    textSecondary: '#6B7280',
+    border: '#E5E7EB',
+    disabled: '#D1D5DB',
+    buy: '#059669',
+    sell: '#DC2626',
+    neutral: '#6B7280',
+  },
+  spacing: darkTheme.spacing,
+  borderRadius: darkTheme.borderRadius,
+  fontSize: darkTheme.fontSize,
+  fontWeight: darkTheme.fontWeight,
+};
+
+export type Theme = typeof darkTheme;
+export type ThemeMode = 'light' | 'dark';
